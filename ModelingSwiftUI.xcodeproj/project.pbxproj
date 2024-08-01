@@ -11,6 +11,7 @@
 		D4A67B4E2C5BEE0E00B87A56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A67B4D2C5BEE0E00B87A56 /* ContentView.swift */; };
 		D4A67B502C5BEE0F00B87A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A67B4F2C5BEE0F00B87A56 /* Assets.xcassets */; };
 		D4A67B532C5BEE0F00B87A56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A67B522C5BEE0F00B87A56 /* Preview Assets.xcassets */; };
+		D4A67B602C5BEE6E00B87A56 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A67B5F2C5BEE6E00B87A56 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D4A67B4D2C5BEE0E00B87A56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D4A67B4F2C5BEE0F00B87A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4A67B522C5BEE0F00B87A56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4A67B5F2C5BEE6E00B87A56 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +53,9 @@
 		D4A67B4A2C5BEE0E00B87A56 /* ModelingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				D4A67B4B2C5BEE0E00B87A56 /* ModelingSwiftUIApp.swift */,
-				D4A67B4D2C5BEE0E00B87A56 /* ContentView.swift */,
-				D4A67B4F2C5BEE0F00B87A56 /* Assets.xcassets */,
-				D4A67B512C5BEE0F00B87A56 /* Preview Content */,
+				D4A67B5D2C5BEE5400B87A56 /* Presentation */,
+				D4A67B592C5BEE1A00B87A56 /* Application */,
+				D4A67B5A2C5BEE2700B87A56 /* Domain */,
 			);
 			path = ModelingSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +66,48 @@
 				D4A67B522C5BEE0F00B87A56 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4A67B592C5BEE1A00B87A56 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D4A67B5B2C5BEE3200B87A56 /* Main */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D4A67B5A2C5BEE2700B87A56 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D4A67B5B2C5BEE3200B87A56 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D4A67B512C5BEE0F00B87A56 /* Preview Content */,
+				D4A67B4B2C5BEE0E00B87A56 /* ModelingSwiftUIApp.swift */,
+				D4A67B4F2C5BEE0F00B87A56 /* Assets.xcassets */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D4A67B5D2C5BEE5400B87A56 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D4A67B5E2C5BEE5C00B87A56 /* ContentView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D4A67B5E2C5BEE5C00B87A56 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				D4A67B5F2C5BEE6E00B87A56 /* ContentViewModel.swift */,
+				D4A67B4D2C5BEE0E00B87A56 /* ContentView.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			files = (
 				D4A67B4E2C5BEE0E00B87A56 /* ContentView.swift in Sources */,
 				D4A67B4C2C5BEE0E00B87A56 /* ModelingSwiftUIApp.swift in Sources */,
+				D4A67B602C5BEE6E00B87A56 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +315,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ModelingSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ModelingSwiftUI/Application/Main/Preview Content\"";
+				DEVELOPMENT_TEAM = X7WM6K9T24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ModelingSwiftUI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,9 +345,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ModelingSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ModelingSwiftUI/Application/Main/Preview Content\"";
+				DEVELOPMENT_TEAM = X7WM6K9T24;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ModelingSwiftUI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
